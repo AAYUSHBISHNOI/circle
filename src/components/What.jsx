@@ -2,7 +2,23 @@ import React from "react";
 
 const What = () => {
   return (
-    <div>
+    <div className=" max-w-[1920px] mx-auto relative">
+      <span>
+        <svg
+        className=" right-0 absolute  top-[43%]"
+          width="157"
+          height="160"
+          viewBox="0 0 157 160"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            opacity="0.2"
+            d="M43.0274 78.424L13.2067 65.0899C8.51576 63.1899 4.71418 59.477 2.56227 54.6937C0.410338 49.9104 0.513766 44.3504 2.43427 39.6712C4.96048 35.2857 8.69806 31.4874 14.1109 29.6232C19.0727 27.9144 24.8075 28.4504 29.202 30.9548L58.7391 46.3954L110.987 1.78373C112.482 0.264407 114.441 0.0919872 116.258 0.972848L134.429 9.78145C135.641 10.3687 136.555 11.5602 137.019 12.9071C137.483 14.254 137.045 15.9116 135.846 16.8267L97.2069 65.7914L136.59 86.379L150.238 77.6608C151.437 76.7458 153.395 76.5734 154.761 77.6096L169.904 84.9501C171.566 85.382 172.481 86.5735 172.649 88.5248C173.112 89.8717 172.674 91.5292 171.476 92.4443L153.393 111.729L149.087 137.319C149.1 138.821 148.056 140.185 146.703 140.651L146.252 140.806C144.899 141.272 143.842 141.134 142.631 140.547L127.488 133.206C126.277 132.619 125.207 130.979 124.744 129.632L123.25 113.573L82.8356 95.8517L67.2125 155.974C66.7742 157.632 66.0267 158.391 64.6735 158.857L64.2224 159.013C62.8692 159.479 61.8125 159.34 60.6011 158.753L42.4303 149.945C40.6132 149.064 39.5437 147.423 39.8273 145.317L43.0274 78.424ZM124.828 15.5993L114.531 10.6077L67.6698 50.3508L88.5726 61.2318L124.828 15.5993ZM129.372 106.443C131.034 106.874 132.104 108.515 132.271 110.466L133.765 126.525L141.033 130.048L144.321 108.827C144.463 107.774 144.759 107.17 145.507 106.41L159.851 90.9233L153.034 87.2445L139.386 95.9626C138.187 96.8776 136.228 97.0501 134.411 96.1692L57.0116 56.0303L24.4461 39.1215C22.4744 37.7917 19.4587 37.8258 17.2034 38.6026C14.4969 39.5346 12.5508 41.2093 11.365 43.6266C10.1793 46.0438 10.5013 48.444 11.2744 50.6888C12.2021 53.3826 14.3285 55.1614 16.7512 56.3359L129.372 106.443ZM59.0037 148.255L73.4538 92.0518L51.9582 82.3794L48.7069 143.263L59.0037 148.255Z"
+            fill="#AFBEC1"
+          />
+        </svg>
+      </span>
       <div className="max-w-[1164px] mx-auto px-[20px] xl:px-0 pt-10 md:pt-[60px] lg:pt-[144px] relative">
         <span>
           <svg
@@ -24,7 +40,7 @@ const What = () => {
           What our customers say
         </h2>
         <div className="flex flex-wrap justify-center md:justify-between mt-5 md:mt-10">
-          <div className="w-full md:w-[48%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] bg-white shadow-what-card text-center flex flex-col items-center justify-center relative px-3">
+          <div className="w-full md:w-[48%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative px-3">
             <span>
               <svg
                 className="absolute top-[5%] left-[37%] lg:left-[34%]"
@@ -67,7 +83,7 @@ const What = () => {
               adipiscing elit, sed do eiu amet smod tempor{" "}
             </p>
           </div>
-          <div className="w-full md:w-[48%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] bg-white shadow-what-card text-center flex flex-col items-center justify-center relative mt-4 md:mt-0 px-3">
+          <div className="w-full md:w-[48%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative mt-4 md:mt-0 px-3">
             <span>
               <svg
                 className="absolute top-[5%] left-[37%] lg:left-[34%]"
@@ -110,7 +126,7 @@ const What = () => {
               adipiscing elit, sed do eiu amet smod tempor{" "}
             </p>
           </div>
-          <div className="w-full md:w-[48%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] bg-white shadow-what-card text-center flex flex-col items-center justify-center relative mt-4 md:mt-7 lg:mt-0 px-3">
+          <div className="w-full md:w-[48%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative mt-4 md:mt-7 lg:mt-0 px-3">
             <span>
               <svg
                 className="absolute top-[5%] left-[37%] lg:left-[34%]"
@@ -153,7 +169,7 @@ const What = () => {
               adipiscing elit, sed do eiu amet smod tempor{" "}
             </p>
           </div>
-          <div className="w-full md:w-[48%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] bg-white shadow-what-card text-center flex flex-col items-center justify-center relative mt-4 md:mt-7 lg:mt-0 px-3">
+          <div className="w-full md:w-[48%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative mt-4 md:mt-7 lg:mt-0 px-3">
             <span>
               <svg
                 className="absolute top-[5%] left-[37%] lg:left-[34%]"

@@ -2,7 +2,7 @@ import React from "react";
 
 const Discover = () => {
   return (
-    <div>
+    <div className=" max-w-[1920px] mx-auto">
       <div className="max-w-[1164px] mx-auto px-[20px] xl:px-0 pt-10 md:pt-[60px] lg:pt-[130px]">
         <div className=" flex justify-center text-center">
           <h2 className="font-inter font-semibold text-3xl md:text-5xl leading-121 text-[#4499ad] max-w-[603px]">
@@ -10,7 +10,7 @@ const Discover = () => {
           </h2>
         </div>
         <div className="flex flex-wrap justify-center md:justify-between mt-5 md:mt-10">
-          <div className="w-full md:w-[32%] xl:w-[364px] h-[540px] rounded-[20px] bg-white border border-[#c1c1c1] px-6 flex flex-col justify-center items-center text-center">
+          <div className="w-full md:w-[32%] xl:w-[364px] h-[540px] rounded-[20px] bg-white border border-[#c1c1c1] hover:border-[#4499ad] duration-300 ease-in-out px-6 flex flex-col justify-center items-center text-center">
             <p className="font-inter font-semibold text-[32px] leading-130 text-[#010101]">
               Basic
             </p>
@@ -148,12 +148,12 @@ const Discover = () => {
               </div>
             </div>
             <div className="mt-10">
-              <button className="font-inter font-semibold text-base leading-121 py-[14px] px-6 bg-[#439cac] rounded-[10px] text-white">
+              <button className="font-inter font-semibold text-base leading-121 py-[14px] px-6 bg-[#439cac] hover:bg-[#bbbbba] duration-300 ease-in-out rounded-[10px] text-white">
                 Choose Plan
               </button>
             </div>
           </div>
-          <div className="w-full md:w-[32%] xl:w-[364px] h-[540px] rounded-[20px] bg-white border border-[#c1c1c1] px-6 flex flex-col justify-center items-center text-center mt-5 md:mt-0 relative overflow-hidden">
+          <div className="w-full md:w-[32%] xl:w-[364px] h-[540px] rounded-[20px] bg-white border border-[#c1c1c1] hover:border-[#4499ad] duration-300 ease-in-out px-6 flex flex-col justify-center items-center text-center mt-5 md:mt-0 relative overflow-hidden">
             <div className="w-[348px] absolute h-[64px] md:h-[40px] lg:h-[54px] flex justify-center items-center bg-[#0066ff] rotate-[37deg] top-0 right-[-40%] md:right-[-64%] md:top-1 lg:right-[-45%] lg:top-[2%] lg:rotate-[40deg] xl:right-[-35%] xl:top-2">
                 <p className="font-inter font-medium text-lg md:text-sm  lg:text-base leading-145 text-white">Popular</p>
             </div>
@@ -292,12 +292,12 @@ const Discover = () => {
               </div>
             </div>
             <div className="mt-10">
-              <button className="font-inter font-semibold text-base leading-121 py-[14px] px-6 bg-[#439cac] rounded-[10px] text-white">
+              <button className="font-inter font-semibold text-base leading-121 py-[14px] px-6 bg-[#439cac] hover:bg-[#bbbbba] duration-300 ease-in-out rounded-[10px] text-white">
                 Choose Plan
               </button>
             </div>
           </div>
-          <div className="w-full md:w-[32%] xl:w-[364px] h-[540px] rounded-[20px] bg-white border border-[#c1c1c1] px-6 flex flex-col justify-center items-center text-center mt-5 md:mt-0">
+          <div className="w-full md:w-[32%] xl:w-[364px] h-[540px] rounded-[20px] bg-white border border-[#c1c1c1] hover:border-[#4499ad] duration-300 ease-in-out px-6 flex flex-col justify-center items-center text-center mt-5 md:mt-0">
             <p className="font-inter font-semibold text-[32px] leading-130 text-[#010101]">
               Basic
             </p>
@@ -429,7 +429,7 @@ const Discover = () => {
               </div>
             </div>
             <div className="mt-10">
-              <button className="font-inter font-semibold text-base leading-121 py-[14px] px-6 bg-[#439cac] rounded-[10px] text-white">
+              <button className="font-inter font-semibold text-base leading-121 py-[14px] px-6 bg-[#439cac] hover:bg-[#bbbbba] duration-300 ease-in-out rounded-[10px] text-white">
                 Choose Plan
               </button>
             </div>

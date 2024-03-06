@@ -1,5 +1,7 @@
 import React, { useState, useRef } from "react";
 import heroimg from "../assets/image/webp/header-img.webp";
+import elpise from "../assets/image/svg/main-elipse.svg";
+import aeroplane from "../assets/image/svg/header-elpise.svg";
 import { ChevronDownIcon, SearchIcon } from "@heroicons/react/solid";
 
 const Header = () => {
@@ -26,18 +28,50 @@ const Header = () => {
   };
 
   return (
-    <div>
-      <div className="max-w-[1440px] px-0 pt-10 md:pt-[60px] lg:pt-[63px]">
+    <div className=" max-w-[1920px] mx-auto relative">
+      <span>
+        <svg
+          className=" absolute top-[-15%] left-[-2%] w-[170px] h-[200px] md:left-0 md:top-[-9%] lg:top-[-15%] lg:left-[-6%] lg:w-[234px] lg:h-[254px] xl:left-[3%] 2xl:left-[15%]" 
+          viewBox="0 0 238 254"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M220.5 -52C253.333 30.3333 255.4 206.5 1 252.5"
+            stroke="#F4EAE1"
+            stroke-width="3"
+          />
+        </svg>
+      </span>
+    <img className=" absolute top-[-12%] left-0 md:left-[34%] md:top-[-8%] lg:left-[23%] lg:top-[-12%] xl:left-[30%]" src={aeroplane} alt="aeroplane-elipse" />
+      <span>
+        <svg
+          className=" absolute right-0 bottom-0 -z-10 "
+          width="709"
+          height="157"
+          viewBox="0 0 709 157"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 26.9741C39.0628 -0.0309337 126.94 -29.2363 173.945 69.982C232.702 194.005 352.434 167.5 576.376 69.982C755.53 -8.03243 828.773 102.155 843 167"
+            stroke="#CCD5D4"
+            stroke-width="2"
+          />
+        </svg>
+      </span>
+      <img  className=" absolute hidden xl:block -z-10 h-[4375px] top-[85%] left-[-1%]" src={elpise} alt="main-elipse" />
+      <div className="max-w-[1140px] mx- auto px-0 pt-10 md:pt-[60px] lg:pt-[63px] relative">
         <div className="md:flex flex-wrap lg:items-center xl:items-start">
-          <div className="w-full lg:w-[60%] xl:w-[70%]">
+          <div className="w-full lg:w-[60%] xl:w-[60%]">
             <img
-              className="w-[929px] h-[380px] md:h-[629px]"
+              className="xl:max-w-[949px] h-[380px] md:h-[629px]"
               src={heroimg}
               alt="expore-img"
             />
           </div>
-          <div className="w-full lg:w-[40%] xl:w-[30%] mt-4 lg:mt-0 px-[20px] xl:px-0">
-            <div className="text-center xl:-translate-x-[40%]">
+          <div className="w-full lg:w-[40%] xl:w-[40%] mt-4 lg:mt-0 px-[20px] xl:px-0">
+            <div className="text-center xl:translate-x-[32.5%] 2xl:translate-x-[90%]">
               <p className="font-dancing font-bold text-6xl md:text-8xl lg:text-6xl xl:text-9xl text-[#4499AD] leading-110 max-w-[491px] md:max-w-[728px] lg:max-w-[491px]">
                 Time to Explore
               </p>
@@ -49,7 +83,7 @@ const Header = () => {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam
               </p>
-              <form onSubmit={handleSearch}>
+              <form onSubmit={handleSearch} className=" bg-white">
                 <div className="flex items-center border border-[#b5b3b4] rounded-xl ps-4 py-1 pe-1 w-[95%] mt-8">
                   <span
                     className="cursor-pointer"
@@ -140,7 +174,7 @@ const Header = () => {
                   </div>
                   <button
                     type="submit"
-                    className="font-poppins ml-2 font-semibold text-base leading-150 text-white bg-[#4499ad] py-[14px] px-[28px] rounded-[10px]"
+                    className="font-poppins ml-2 font-semibold text-base leading-150 text-white bg-[#4499ad] hover:bg-[#bbbbba] duration-300 ease-in-out py-[14px] px-[28px] rounded-[10px]"
                   >
                     Search
                   </button>

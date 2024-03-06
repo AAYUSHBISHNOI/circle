@@ -1,76 +1,38 @@
 import React from "react";
-import Slider from "react-slick";
+import Marquee from "react-fast-marquee";
 import dubai from "../assets/image/webp/dubai-img.webp";
 import wang from "../assets/image/webp/wang-img.webp";
 import nepal from "../assets/image/webp/nepal-img.webp";
 import singapore from "../assets/image/webp/singapore-img.webp";
 import tajmahal from "../assets/image/webp/tajmahal-img.webp";
 
-const Top = () => {
-  var settings = {
-    dots: false,
-    arrows: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3.7,
-    slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: "45px",
-    autoplay: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          centerMode: true,
-          centerPadding: "10px",
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: true,
-          centerPadding: "30px",
-        },
-      },
-    ],
-  };
+const Top = () => {  
   return (
-    <div>
+    <div className=" max-w-[1920px] mx-auto">
       <div className="pt-10 md:pt-[60px] lg:pt-[130px]">
         <h2 className="font-inter font-semibold text-4xl md:text-5xl leading-121 text-[#4499ad] text-center">
           Top Destinations
         </h2>
-        <Slider {...settings} className="!h-[390px] mt-5 md:mt-10">
-          <div className="!w-[300px] !h-[390px] relative">
+        <Marquee speed={100} className="mt-5 md:mt-10">
+          <div className="!w-[320px] !h-[390px] relative">
             <img className=" h-[382px]" src={dubai} alt="dubai-img" />
             <p className="font-inter font-semibold text-xl text-white leading-140 absolute bottom-[5%] left-[30%]">
               Dubai, UAE
             </p>
           </div>
-          <div className="!w-[300px] !h-[390px] relative">
+          <div className="!w-[320px] !h-[390px] relative">
             <img className=" h-[382px]" src={wang} alt="wang-img" />
             <p className="font-inter font-semibold text-xl text-white leading-140 absolute bottom-[5%] left-[20%]">
               Wang, Thailand
             </p>
           </div>
-          <div className="!w-[300px] !h-[390px] relative">
+          <div className="!w-[320px] !h-[390px] relative">
             <img className=" h-[382px]" src={nepal} alt="nepal-img" />
             <p className="font-inter font-semibold text-xl text-white leading-140 absolute bottom-[5%] left-[20%]">
               Kathmandu, Nepal
             </p>
           </div>
-          <div className="!w-[300px] !h-[390px] relative">
+          <div className="!w-[320px] !h-[390px] relative">
             <img
               className="rounded-[30px]  h-[382px]"
               src={singapore}
@@ -80,16 +42,22 @@ const Top = () => {
               Rafels, Singapore
             </p>
           </div>
-          <div className="!w-[300px] !h-[390px] relative">
+          <div className="!w-[320px] !h-[390px] relative">
             <img className=" h-[382px]" src={tajmahal} alt="tajmahal-img" />
             <p className="font-inter font-semibold text-xl text-white leading-140 absolute bottom-[5%] left-[30%]">
               Agra,India
             </p>
           </div>
-        </Slider>
+          <div className="!w-[320px] !h-[390px] relative hidden 2xl:block">
+            <img className=" h-[382px]" src={nepal} alt="nepal-img" />
+            <p className="font-inter font-semibold text-xl text-white leading-140 absolute bottom-[5%] left-[20%]">
+              Kathmandu, Nepal
+            </p>
+          </div>
+        </Marquee> 
         <div className=" flex justify-center mt-3 md:mt-8">
-          <button className="font-inter font-semibold text-white text-base leading-140 bg-[#439cac] py-[14px] px-6 rounded-[10px] flex items-center gap-3">
-            Explore More{" "}
+          <button className="font-inter font-semibold text-white text-base leading-140 bg-[#439cac] hover:bg-[#bbbbba] duration-300 ease-in-out py-[14px] px-6 rounded-[10px] flex items-center gap-3">
+            Explore More 
             <span>
               <svg
                 width="15"

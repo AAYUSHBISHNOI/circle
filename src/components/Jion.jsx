@@ -11,7 +11,7 @@ const Jion = () => {
     setEmail("");
   };
   return (
-    <div>
+    <div className=" max-w-[1920px] mx-auto">
       <div className="max-w-[1164px] mx-auto px-[20px] xl:px-0 py-10 md:py-[60px] lg:pt-[115px] flex justify-center">
         <div className="bg-[#4499AD] w-[802px] h-[336px] rounded-[30px] py-4 md:py-[58px] px-5 md:px-[168px] flex justify-center flex-col items-center relative">
           <span>
@@ -74,7 +74,7 @@ const Jion = () => {
             />
             <button
               type="submit"
-              className="font-inter font-semibold text-sm md:text-base leading-121 text-white bg-[#4499ad] py-[12px] px-[18px] md:px-[24px] rounded-[10px]"
+              className="font-inter font-semibold text-sm md:text-base leading-121 text-white bg-[#4499ad] hover:bg-[#bbbbba] duration-300 ease-in-out py-[12px] px-[18px] md:px-[24px] rounded-[10px]"
             >
               Sign Up
             </button>

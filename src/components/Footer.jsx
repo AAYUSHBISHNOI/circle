@@ -13,10 +13,10 @@ const Footer = () => {
   };
   const currentYear = new Date().getFullYear();
   return (
-    <div className="bg-[#1D1C19]">
+    <div className="bg-[#1D1C19] max-w-[1920px] mx-auto">  
       <div className="max-w-[1164px] mx-auto px-[20px] xl:px-0 pt-10 md:pt-[60px]">
         <div className="flex flex-wrap justify-between pb-8">
-          <div className="lg:w-[30%] xl:w-[30%]">
+          <div className="lg:w-[30%] xl:w-[28%]">
             <a href="/">
               <img src={footer_logo} alt="footer-logo" />
             </a>
@@ -130,7 +130,7 @@ const Footer = () => {
               <li className=" mt-2 md:mt-4">
                 <a
                   href=""
-                  className="text-lightwhite font-inter font-normal text-base leading-150"
+                  className="text-lightwhite duration-300 hover:text-[#4499ad] font-inter font-normal text-base leading-150"
                 >
                   How It Works
                 </a>
@@ -138,7 +138,7 @@ const Footer = () => {
               <li className=" mt-2 md:mt-4">
                 <a
                   href=""
-                  className="text-lightwhite font-inter font-normal text-base leading-150"
+                  className="text-lightwhite duration-300 hover:text-[#4499ad] font-inter font-normal text-base leading-150"
                 >
                   Pricing
                 </a>
@@ -146,7 +146,7 @@ const Footer = () => {
               <li className=" mt-2 md:mt-4">
                 <a
                   href=""
-                  className="text-lightwhite font-inter font-normal text-base leading-150"
+                  className="text-lightwhite duration-300 hover:text-[#4499ad] font-inter font-normal text-base leading-150"
                 >
                   Reviews
                 </a>
@@ -154,7 +154,7 @@ const Footer = () => {
               <li className=" mt-2 md:mt-4">
                 <a
                   href=""
-                  className="text-lightwhite font-inter font-normal text-base leading-150"
+                  className="text-lightwhite duration-300 hover:text-[#4499ad] font-inter font-normal text-base leading-150"
                 >
                   Our Team
                 </a>
@@ -162,14 +162,14 @@ const Footer = () => {
               <li className=" mt-2 md:mt-4">
                 <a
                   href=""
-                  className="text-lightwhite font-inter font-normal text-base leading-150"
+                  className="text-lightwhite duration-300 hover:text-[#4499ad] font-inter font-normal text-base leading-150"
                 >
                   FAQ’s
                 </a>
               </li>
             </ul>
           </div>
-          <div className="lg:w-[20%] xl:w-[13%] mt-5 md:mt-0">
+          <div className="lg:w-[20%] xl:w-[15%] mt-5 md:mt-0">
             <ul>
               <li className="font-inter font-semibold text-base text-white leading-121">
                 Register
@@ -177,7 +177,7 @@ const Footer = () => {
               <li className=" mt-2 md:mt-4">
                 <a
                   href=""
-                  className="text-lightwhite font-inter font-normal text-base leading-150"
+                  className="text-lightwhite duration-300 hover:text-[#4499ad] font-inter font-normal text-base leading-150"
                 >
                   Contact Us
                 </a>
@@ -185,7 +185,7 @@ const Footer = () => {
               <li className=" mt-2 md:mt-4">
                 <a
                   href=""
-                  className="text-lightwhite font-inter font-normal text-base leading-150"
+                  className="text-lightwhite duration-300 hover:text-[#4499ad] font-inter font-normal text-base leading-150"
                 >
                   Privacay and Policy
                 </a>
@@ -193,7 +193,7 @@ const Footer = () => {
               <li className=" mt-2 md:mt-4">
                 <a
                   href=""
-                  className="text-lightwhite font-inter font-normal text-base leading-150"
+                  className="text-lightwhite duration-300 hover:text-[#4499ad] font-inter font-normal text-base leading-150"
                 >
                   Terms and Condition
                 </a>
@@ -206,7 +206,7 @@ const Footer = () => {
                 Subscribe Us
               </li>
             </ul>
-            <p className="max-w-[336px] font-inter font-normal text-base leading-150 text-lightwhite">
+            <p className="max-w-[336px] font-inter font-normal text-base leading-150 text-lightwhite ">
               Lorem ipsum dolor sit amet consectetur. Diam pellentesque nulla
               viverra.
             </p>
@@ -226,7 +226,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="font-inter font-semibold text-sm md:text-base leading-121 text-white bg-[#4499ad] py-[14px] px-[18px] md:px-[24px] rounded-[10px]"
+                className="font-inter font-semibold text-sm md:text-base leading-121 text-white bg-[#4499ad] hover:bg-[#bbbbba] duration-300 ease-in-out py-[14px] px-[18px] md:px-[24px] rounded-[10px]"
               >
                 Get Started
               </button>

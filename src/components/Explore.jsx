@@ -4,13 +4,13 @@ import explore from "../assets/image/webp/explore-world.webp";
 
 const Explore = () => {
   return (
-    <div className="">
+    <div className=" max-w-[1920px] mx-auto">
       <div className="container px-0 pt-10 md:pt-[60px] lg:pt-[115px]">
         <div className="md:flex flex-wrap items-center">
           <div className="w-full lg:w-[60%]">
             <img className="w-[957px] h-[380px] md:h-[651px]" src={explore} alt="expore-img" />
           </div>
-          <div className="w-full lg:w-[40%] mt-4 lg:mt-0 px-[20px] xl:px-0">
+          <div className="w-full lg:w-[40%] mt-4 lg:mt-0 px-[20px] xl:px-0 xl:flex xl:justify-end xl:items-end">
             <div className="text-center">
               <p className="font-dancing font-semibold text-6xl md:text-8xl lg:text-6xl xl:text-8xl text-[#4499AD] leading-121 max-w-[491px] md:max-w-[728px] lg:max-w-[491px]">
                 Explore the world with us
