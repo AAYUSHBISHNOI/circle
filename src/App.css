@@ -4,21 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.dancing {
-  font-family: "Dancing Script";
-}
-.inter {
-  font-family: "Inter";
-}
-.poppins {
-  font-family: "Poppins";
-}
 .footer-icon:hover path {
   fill: white !important;
 }
 .linear-line{
   background:  linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 57.86%, rgba(255, 255, 255, 0) 100.79%);
 } 
-.slick-slide{
-  width: 320px !important;
-}

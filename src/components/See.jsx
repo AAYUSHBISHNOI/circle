@@ -1,17 +1,20 @@
 import React from "react";
-import seeimg from "../assets/image/webp/see-how.webp";
+import seeimg from "../assets/image/webp/taj-mahal.webp";
+import button from "../assets/image/webp/play-button.webp";
+import tajmahal from "../assets/video/taj-mahal.mp4";
 
 const See = () => {
+  const [showModal, setShowModal] = React.useState(false);
   return (
     <div>
-      <div className="px-0 pt-10 md:pt-[60px] lg:pt-[130px] max-w-[1920px] mx-auto">
+      <div className="px-0 pt-10 md:pt-[60px] lg:pt-[90px] xl:pt-[130px] max-w-[1920px] mx-auto">
         <div className="md:flex flex-wrap items-center justify-end">
           <div className="w-full lg:w-[40%] xl:w-[30%] px-[20px] xl:px-0">
-            <div className="text-center">
-              <p className="font-dancing font-semibold text-6xl md:text-8xl lg:text-6xl xl:text-8xl text-[#4499AD] leading-121 max-w-[491px] md:max-w-[728px] lg:max-w-[491px]">
+            <div className="text-center xl:translate-x-[12%] xl:mt-8">
+              <p className="font-dancing font-semibold text-6xl  xl:text-8xl text-[#4499AD] leading-121 max-w-[491px] md:max-w-[728px] lg:max-w-[491px]">
                 See How We tour it
               </p>
-              <p className="font-dancing font-bold text-5xl md:text-[64px] lg:text-5xl xl:text-[64px] leading-121 text-[#DBBFA7] md:mt-2 xl:mt-4">
+              <p className="font-dancing font-bold text-5xl lg:text-5xl xl:text-[64px] leading-121 text-[#DBBFA7] md:mt-2 xl:mt-4">
                 Tour your Dreams
               </p>
               <p className="font-inter font-medium text-base leading-150 text-[#4499AD] mt-3 xl:mt-10 lg:mt-6 max-w-[434px] md:max-w-[710px] lg:max-w-[434px]">
@@ -21,7 +24,7 @@ const See = () => {
               </p>
               <span>
                 <svg
-                className="mt-6 md:mt-[50px] ml-16"
+                  className="mt-6 md:mt-[50px] ml-[19%]"
                   width="147"
                   height="82"
                   viewBox="0 0 147 82"
@@ -42,12 +45,51 @@ const See = () => {
               </span>
             </div>
           </div>
-          <div className="w-full lg:w-[60%] flex items-end justify-end">
-            <img
-              className="w-[957px] h-[380px] md:h-[651px] right-0"
-              src={seeimg}
-              alt="see-img"
-            />
+          <div className="w-full lg:w-[60%] flex items-end justify-end ">
+            <div className="relative">
+              <img
+                className="max-w-[350px] md:max-w-[985px] h-[270px] md:h-[500px] xl:h-[651px] right-0"
+                src={seeimg}
+                alt="see-img"
+              />
+              <button type="button" onClick={() => setShowModal(true)}>
+                <img
+                  className="lg:w-[90px] w-[40px] h-[40px] md:w-[60px] md:h-[60px] lg:h-[90px] absolute -translate-x-[50%] -translate-y-[50%] top-[52%] left-[52%]"
+                  src={button}
+                  alt="play-button"
+                />
+              </button>
+              {showModal ? (
+                <>
+                  <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none">
+                    <div className="relative w-auto my-6 mx-auto max-w-[90%]">
+                      <div className="bg-white p-4 rounded-lg shadow-lg">
+                        <video
+                          loop
+                          controls
+                          src={tajmahal}
+                          className="w-full mt-2"
+                        ></video>
+                        <button
+                          className="text-black absolute top-1 right-2 background-transparent font-bold uppercase text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                          type="button"
+                          onClick={() => setShowModal(false)}
+                        >
+                          X
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="opacity-50 fixed inset-0 z-40 bg-black"></div>
+                </>
+              ) : null}
+
+              {/* <img
+                className="lg:w-[90px] w-[40px] h-[40px] md:w-[60px] md:h-[60px] lg:h-[90px] absolute -translate-x-[50%] -translate-y-[50%] top-[52%] left-[52%]"
+                src={button}
+                alt="play-button"
+              /> */}
+            </div>
           </div>
         </div>
       </div>

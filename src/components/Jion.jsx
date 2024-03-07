@@ -12,7 +12,7 @@ const Jion = () => {
   };
   return (
     <div className=" max-w-[1920px] mx-auto">
-      <div className="max-w-[1164px] mx-auto px-[20px] xl:px-0 py-10 md:py-[60px] lg:pt-[115px] flex justify-center">
+      <div className="max-w-[1140px] mx-auto px-[20px] xl:px-0 py-10 md:py-[60px] pt-[90px] xl:pt-[115px] flex justify-center">
         <div className="bg-[#4499AD] w-[802px] h-[336px] rounded-[30px] py-4 md:py-[58px] px-5 md:px-[168px] flex justify-center flex-col items-center relative">
           <span>
             <svg
@@ -55,8 +55,8 @@ const Jion = () => {
             Join Us
           </h2>
           <p className="max-w-[466px] md:max-w-[570px] lg:max-w-[466px] font-inter font-normal text-base leading-150 text-center text-[#b4d6de] md:mt-4">
-            Lorem ipsum dolor sit amet consectetur. In ultrices orci urna eget
-            fringilla nisl duis lectus. Tincidunt pretium odio
+            Lorem Ipsum Dolor Sit Amet Consectetur. In Ultrices Orci Urna Eget
+            Fringilla Nisl Duis Lectus. Tincidunt Pretium Odio
           </p>
           <form
             onSubmit={handleSubmit}

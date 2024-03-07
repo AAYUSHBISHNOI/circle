@@ -45,12 +45,12 @@ const Nav = () => {
           <ul
             className={`${
               show ? "left-0" : ""
-            } duration-500 bg-transparent backdrop-blur-[22px] w-full h-full top-[0] -left-full fixed gap-[25px] lg:gap-[32px] flex flex-col justify-center items-center lg:bg-transparent lg:flex-row lg:static lg:w-auto lg:h-full z-40`}
+            } duration-500 bg-[#bbbbba] w-full h-full top-[0] -left-full fixed gap-[25px] lg:gap-[32px] flex flex-col justify-center items-center lg:bg-transparent lg:flex-row lg:static lg:w-auto lg:h-full z-40`}
           >
             <li>
               <a
                 href=""
-                className="font-poppins font-medium text-2xl md:text-base leading-150 duration-300 ease-in-out text-[#4d4d4d] hover:text-[#010101] relative after:absolute after:bg-[#000] after:w-0 after:h-[2px] after:bottom-[-2px] after:right-[50%] hover:after:right-0 after:rounded-full  after:duration-300 inline hover:after:w-[100%]"
+                className="font-poppins font-medium text-xl md:text-2xl lg:text-base leading-150 duration-300 ease-in-out text-[#4d4d4d] hover:text-[#010101] relative after:absolute after:bg-[#000] after:w-0 after:h-[2px] after:bottom-[-2px] after:right-[50%] hover:after:right-0 after:rounded-full  after:duration-300 inline hover:after:w-[100%]"
               >
                 Destination
               </a>
@@ -58,7 +58,7 @@ const Nav = () => {
             <li>
               <a
                 href=""
-                className="font-poppins font-medium text-2xl md:text-base leading-150 duration-300 ease-in-out text-[#4d4d4d] hover:text-[#010101] relative after:absolute after:bg-[#000] after:w-0 after:h-[2px] after:bottom-[-2px] after:right-[50%] hover:after:right-0 after:rounded-full after:duration-300 inline hover:after:w-[100%]"
+                className="font-poppins font-medium text-xl md:text-2xl lg:text-base leading-150 duration-300 ease-in-out text-[#4d4d4d] hover:text-[#010101] relative after:absolute after:bg-[#000] after:w-0 after:h-[2px] after:bottom-[-2px] after:right-[50%] hover:after:right-0 after:rounded-full after:duration-300 inline hover:after:w-[100%]"
               >
                 Trip Plan
               </a>
@@ -66,23 +66,23 @@ const Nav = () => {
             <li>
               <a
                 href=""
-                className="font-poppins font-medium text-2xl md:text-base leading-150 duration-300 ease-in-out text-[#4d4d4d] hover:text-[#010101] relative after:absolute after:bg-[#000] after:w-0 after:h-[2px] after:bottom-[-2px] after:right-[50%] hover:after:right-0 after:rounded-full  after:duration-300 inline hover:after:w-[100%]"
+                className="font-poppins font-medium text-xl md:text-2xl lg:text-base leading-150 duration-300 ease-in-out text-[#4d4d4d] hover:text-[#010101] relative after:absolute after:bg-[#000] after:w-0 after:h-[2px] after:bottom-[-2px] after:right-[50%] hover:after:right-0 after:rounded-full  after:duration-300 inline hover:after:w-[100%]"
               >
                 Discover
               </a>
             </li>
-            <button className="font-inter lg:hidden font-semibold text-base leading-145 text-[#439cac] py-[11px] px-8 border rounded-[10px] border-[#439cac] hover:bg-[#bbbbba] duration-300 ease-in-out hover:border-transparent hover:text-white">
+            <button className="font-inter lg:hidden font-semibold text-xl md:text-2xl lg:text-base leading-145 text-[#439cac] py-[11px] px-6 border rounded-[10px] border-[#439cac] hover:bg-[#bbbbba] duration-300 ease-in-out hover:border-transparent hover:text-white">
               Sign In
             </button>
-            <button className="font-inter lg:hidden font-semibold text-base leading-145 text-white py-[12px] px-6 bg-[#439cac] hover:bg-[#bbbbba] duration-300 ease-in-out rounded-[10px]">
+            <button className="font-inter lg:hidden font-semibold text-xl md:text-2xl lg:text-base leading-145 text-white py-[12px] px-6 bg-[#439cac] hover:bg-[#bbbbba] duration-300 ease-in-out rounded-[10px]">
               Contact US
             </button>
           </ul>
           <div className="flex gap-3">
-            <button className="font-inter hidden lg:block font-semibold text-base leading-145 text-[#439cac] py-[11px] px-8 border rounded-[10px] border-[#439cac] hover:bg-[#bbbbba] duration-300 ease-in-out hover:border-transparent hover:text-white">
+            <button className="font-inter hidden lg:block font-semibold text-xl md:text-2xl lg:text-base leading-145 text-[#439cac] py-[11px] px-6 border rounded-[10px] border-[#439cac] hover:bg-[#bbbbba] duration-300 ease-in-out hover:border-transparent hover:text-white">
               Sign In
             </button>
-            <button className="font-inter hidden lg:block font-semibold text-base leading-145 text-white py-[12px] px-6 bg-[#439cac] hover:bg-[#bbbbba] duration-300 ease-in-out rounded-[10px]">
+            <button className="font-inter hidden lg:block font-semibold text-xl md:text-2xl lg:text-base leading-145 text-white py-[12px] px-6 bg-[#439cac] hover:bg-[#bbbbba] duration-300 ease-in-out rounded-[10px]">
               Contact US
             </button>
           </div>

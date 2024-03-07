@@ -10,6 +10,7 @@ import Top from "./components/Top";
 import What from "./components/What";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
+import BackToTop from "./components/BackToTop";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Explore />
       <Jion />
       <Footer />
+      <BackToTop/>
     </>
   );
 }

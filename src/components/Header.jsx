@@ -46,7 +46,7 @@ const Header = () => {
     <img className=" absolute top-[-12%] left-0 md:left-[34%] md:top-[-8%] lg:left-[23%] lg:top-[-12%] xl:left-[30%]" src={aeroplane} alt="aeroplane-elipse" />
       <span>
         <svg
-          className=" absolute right-0 bottom-0 -z-10 "
+          className=" absolute right-0 bottom-[-2%] -z-10 "
           width="709"
           height="157"
           viewBox="0 0 709 157"
@@ -65,26 +65,26 @@ const Header = () => {
         <div className="md:flex flex-wrap lg:items-center xl:items-start">
           <div className="w-full lg:w-[60%] xl:w-[60%]">
             <img
-              className="xl:max-w-[949px] h-[380px] md:h-[629px]"
+              className="max-w-[350px] md:max-w-[550px] lg:max-w-[680px] xl:max-w-[949px] h-[270px] md:h-[450px] lg:h-[629px]"
               src={heroimg}
               alt="expore-img"
             />
           </div>
-          <div className="w-full lg:w-[40%] xl:w-[40%] mt-4 lg:mt-0 px-[20px] xl:px-0">
+          <div className="w-full lg:w-[40%] xl:w-[40%] mt-4 md:mt-6 lg:mt-0 px-[20px] xl:px-0 flex justify-center flex-col items-center">
             <div className="text-center xl:translate-x-[32.5%] 2xl:translate-x-[90%]">
-              <p className="font-dancing font-bold text-6xl md:text-8xl lg:text-6xl xl:text-9xl text-[#4499AD] leading-110 max-w-[491px] md:max-w-[728px] lg:max-w-[491px]">
-                Time to Explore
+              <p className="font-dancing font-bold text-6xl md:text-7xl xl:text-9xl text-[#4499AD] !leading-110 max-w-[491px] md:max-w-[728px] lg:max-w-[491px]">
+                Time to <span className="xl:ml-12">Explore</span>
               </p>
-              <p className="font-dancing font-bold text-5xl md:text-[64px] lg:text-5xl xl:text-[64px] leading-121 text-[#DBBFA7] md:mt-2 xl:mt-4">
+              <p className="font-dancing font-bold text-4xl md:text-5xl xl:text-[64px] leading-121 text-[#DBBFA7] lg:mt-2 xl:mt-4 lg:max-w-[408px] xl:ml-10">
                 Find yourDreams
               </p>
-              <p className="font-inter font-medium text-base leading-150 text-[#4499AD] mt-3 xl:mt-10 lg:mt-6 max-w-[434px] md:max-w-[710px] lg:max-w-[434px]">
+              <p className="font-inter font-medium text-base leading-150 text-[#4499AD] mt-3 lg:mt-4 max-w-[434px] md:max-w-[710px] lg:max-w-[434px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam
               </p>
               <form onSubmit={handleSearch} className=" bg-white">
-                <div className="flex items-center border border-[#b5b3b4] rounded-xl ps-4 py-1 pe-1 w-[95%] mt-8">
+                <div className="flex items-center justify-between border border-[#b5b3b4] rounded-xl ps-4 py-1 pe-1 w-[95%] mt-8">
                   <span
                     className="cursor-pointer"
                     onClick={() => {

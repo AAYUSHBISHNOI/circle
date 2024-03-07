@@ -5,7 +5,7 @@ const What = () => {
     <div className=" max-w-[1920px] mx-auto relative">
       <span>
         <svg
-        className=" right-0 absolute  top-[43%]"
+          className=" right-0 absolute  top-[43%]"
           width="157"
           height="160"
           viewBox="0 0 157 160"
@@ -19,10 +19,11 @@ const What = () => {
           />
         </svg>
       </span>
-      <div className="max-w-[1164px] mx-auto px-[20px] xl:px-0 pt-10 md:pt-[60px] lg:pt-[144px] relative">
+    
+      <div className="max-w-[1140px] mx-auto px-[20px] xl:px-0 pt-10 md:pt-[60px] lg:pt-[90px] xl:pt-[144px] relative">
         <span>
           <svg
-            className=" absolute -z-10 top-0 md:top-[-4%] lg:top-[6%] left-[0]"
+            className=" absolute -z-10 top-0 md:top-[-4%] lg:top-0 xl:top-[9%] left-[0]"
             width="100%"
             height="197"
             viewBox="0 0 1087 197"
@@ -40,7 +41,7 @@ const What = () => {
           What our customers say
         </h2>
         <div className="flex flex-wrap justify-center md:justify-between mt-5 md:mt-10">
-          <div className="w-full md:w-[48%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative px-3">
+          <div className="w-full max-w-[370px] md:w-[48%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative px-3">
             <span>
               <svg
                 className="absolute top-[5%] left-[37%] lg:left-[34%]"
@@ -83,7 +84,7 @@ const What = () => {
               adipiscing elit, sed do eiu amet smod tempor{" "}
             </p>
           </div>
-          <div className="w-full md:w-[48%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative mt-4 md:mt-0 px-3">
+          <div className="w-full max-w-[370px] md:w-[48%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative mt-4 md:mt-0 px-3">
             <span>
               <svg
                 className="absolute top-[5%] left-[37%] lg:left-[34%]"
@@ -126,7 +127,7 @@ const What = () => {
               adipiscing elit, sed do eiu amet smod tempor{" "}
             </p>
           </div>
-          <div className="w-full md:w-[48%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative mt-4 md:mt-7 lg:mt-0 px-3">
+          <div className="w-full max-w-[370px] md:w-[48%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative mt-4 md:mt-7 lg:mt-0 px-3">
             <span>
               <svg
                 className="absolute top-[5%] left-[37%] lg:left-[34%]"
@@ -169,7 +170,7 @@ const What = () => {
               adipiscing elit, sed do eiu amet smod tempor{" "}
             </p>
           </div>
-          <div className="w-full md:w-[48%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative mt-4 md:mt-7 lg:mt-0 px-3">
+          <div className="w-full max-w-[370px] md:w-[48%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative mt-4 md:mt-7 lg:mt-0 px-3">
             <span>
               <svg
                 className="absolute top-[5%] left-[37%] lg:left-[34%]"

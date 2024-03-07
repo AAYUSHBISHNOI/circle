@@ -14,7 +14,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <div className="bg-[#1D1C19] max-w-[1920px] mx-auto">  
-      <div className="max-w-[1164px] mx-auto px-[20px] xl:px-0 pt-10 md:pt-[60px]">
+      <div className="max-w-[1140px] mx-auto px-[20px] xl:px-0 pt-10 md:pt-[60px]">
         <div className="flex flex-wrap justify-between pb-8">
           <div className="lg:w-[30%] xl:w-[28%]">
             <a href="/">
@@ -212,7 +212,7 @@ const Footer = () => {
             </p>
             <form
               onSubmit={handleSubmit}
-              className="border rounded-[10px] border-[#61605e] flex items-center py-1 ps-2 md:ps-4 justify-between pe-1 mt-4 lg:mt-8"
+              className="border rounded-[10px] border-[#61605e] flex items py-1 ps-2 md:ps-4 justify-between pe-1 mt-4 lg:mt-8"
             >
               <input
                 type="email"
@@ -226,7 +226,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="font-inter font-semibold text-sm md:text-base leading-121 text-white bg-[#4499ad] hover:bg-[#bbbbba] duration-300 ease-in-out py-[14px] px-[18px] md:px-[24px] rounded-[10px]"
+                className="font-inter font-semibold text-sm md:text-base leading-121 text-white bg-[#4499ad] hover:bg-[#bbbbba] duration-300 ease-in-out py-[12px] px-[18px] md:px-[24px] rounded-[10px]"
               >
                 Get Started
               </button>
