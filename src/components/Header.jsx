@@ -63,14 +63,14 @@ const Header = () => {
       <img  className=" absolute hidden xl:block -z-10 h-[4375px] top-[85%] left-[-1%]" src={elpise} alt="main-elipse" />
       <div className="max-w-[1140px] mx- auto px-0 pt-10 md:pt-[60px] lg:pt-[63px] relative">
         <div className="md:flex flex-wrap lg:items-center xl:items-start">
-          <div className="w-full lg:w-[60%] xl:w-[60%]">
+          <div className="w-full lg:w-[60%] xl:w-[60%]" data-aos="fade-up">
             <img
-              className="max-w-[350px] md:max-w-[550px] lg:max-w-[680px] xl:max-w-[949px] h-[270px] md:h-[450px] lg:h-[629px]"
+              className="max-w-[300px] md:max-w-[550px] lg:max-w-[680px] xl:max-w-[949px] h-[270px] md:h-[450px] lg:h-[629px]"
               src={heroimg}
               alt="expore-img"
             />
           </div>
-          <div className="w-full lg:w-[40%] xl:w-[40%] mt-4 md:mt-6 lg:mt-0 px-[20px] xl:px-0 flex justify-center flex-col items-center">
+          <div className="w-full lg:w-[40%] xl:w-[40%] mt-4 md:mt-6 lg:mt-0 px-[20px] xl:px-0 flex justify-center flex-col items-center" data-aos="fade-down">
             <div className="text-center xl:translate-x-[32.5%] 2xl:translate-x-[90%]">
               <p className="font-dancing font-bold text-6xl md:text-7xl xl:text-9xl text-[#4499AD] !leading-110 max-w-[491px] md:max-w-[728px] lg:max-w-[491px]">
                 Time to <span className="xl:ml-12">Explore</span>

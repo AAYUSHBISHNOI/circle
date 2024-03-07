@@ -45,7 +45,7 @@ const Nav = () => {
           <ul
             className={`${
               show ? "left-0" : ""
-            } duration-500 bg-[#bbbbba] w-full h-full top-[0] -left-full fixed gap-[25px] lg:gap-[32px] flex flex-col justify-center items-center lg:bg-transparent lg:flex-row lg:static lg:w-auto lg:h-full z-40`}
+            } duration-500 bg-white w-full h-full top-[0] -left-full fixed gap-[25px] lg:gap-[32px] flex flex-col justify-center items-center lg:bg-transparent lg:flex-row lg:static lg:w-auto lg:h-full z-40`}
           >
             <li>
               <a

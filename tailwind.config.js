@@ -24,6 +24,10 @@ module.exports = {
       boxShadow: {
         'what-card': '2px 4px 25px 0px #0000001A',
       },
+      screens: {
+        'xmd': '576px',
+        'xxl': '1440px',
+      },
     },
   },
   plugins: [],

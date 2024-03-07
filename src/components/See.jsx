@@ -1,17 +1,36 @@
 import React from "react";
 import seeimg from "../assets/image/webp/taj-mahal.webp";
 import button from "../assets/image/webp/play-button.webp";
+import cross from "../assets/image/svg/cross-icon.svg";
+import play from "../assets/image/svg/play.svg";
+import pause from "../assets/image/svg/pause.svg";
 import tajmahal from "../assets/video/taj-mahal.mp4";
+import { useRef } from "react";
 
 const See = () => {
   const [showModal, setShowModal] = React.useState(false);
+  const videoRef = useRef(null);
+  const [isplaying, setisplaying] = React.useState(false);
+
+  const togglePlaying = () => {
+    if (videoRef.current.paused) {
+      videoRef.current.play();
+      setisplaying(true);
+    } else {
+      videoRef.current.pause();
+      setisplaying(false);
+    }
+  };
   return (
     <div>
       <div className="px-0 pt-10 md:pt-[60px] lg:pt-[90px] xl:pt-[130px] max-w-[1920px] mx-auto">
-        <div className="md:flex flex-wrap items-center justify-end">
-          <div className="w-full lg:w-[40%] xl:w-[30%] px-[20px] xl:px-0">
-            <div className="text-center xl:translate-x-[12%] xl:mt-8">
-              <p className="font-dancing font-semibold text-6xl  xl:text-8xl text-[#4499AD] leading-121 max-w-[491px] md:max-w-[728px] lg:max-w-[491px]">
+        <div className="md:flex flex-wrap items-center justify-end  ">
+          <div
+            className="w-full lg:w-[40%] xl:w-[30%] px-[20px] xl:px-0"
+            data-aos="zoom-in-down"
+          >
+            <div className="text-center xl:translate-x-[12%] xl:mt-8 flex justify-center flex-col items-center">
+              <p className="font-dancing font-semibold text-6xl  xl:text-8xl text-[#4499AD] leading-121 lg:max-w-[491px]">
                 See How We tour it
               </p>
               <p className="font-dancing font-bold text-5xl lg:text-5xl xl:text-[64px] leading-121 text-[#DBBFA7] md:mt-2 xl:mt-4">
@@ -45,10 +64,10 @@ const See = () => {
               </span>
             </div>
           </div>
-          <div className="w-full lg:w-[60%] flex items-end justify-end ">
+          <div className="w-full lg:w-[60%] flex items-end justify-end">
             <div className="relative">
               <img
-                className="max-w-[350px] md:max-w-[985px] h-[270px] md:h-[500px] xl:h-[651px] right-0"
+                className="max-w-[350px] md:max-w-[985px] lg:max-w-[650px] xxl:max-w-[985px] h-[270px] md:h-[500px] xxl:h-[651px] right-0"
                 src={seeimg}
                 alt="see-img"
               />
@@ -64,18 +83,34 @@ const See = () => {
                   <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none">
                     <div className="relative w-auto my-6 mx-auto max-w-[90%]">
                       <div className="bg-white p-4 rounded-lg shadow-lg">
-                        <video
-                          loop
-                          controls
-                          src={tajmahal}
-                          className="w-full mt-2"
-                        ></video>
+                        <div>
+                          <video
+                            ref={videoRef}
+                            loop
+                            controls
+                            src={tajmahal}
+                            className="w-full mt-4 relative"
+                            onClick={togglePlaying}
+                            onPause={() => setisplaying(false)}
+                            onPlay={() => setisplaying(true)}
+                          ></video>
+                          <button
+                            className=" absolute -translate-x-[50%] -translate-y-[50%] top-[50%] left-[50%]"
+                            onClick={togglePlaying}
+                          >
+                            {isplaying ? (
+                              <img src={pause} alt="Pause" />
+                            ) : (
+                              <img src={play} alt="Play" />
+                            )}
+                          </button>
+                        </div>
                         <button
-                          className="text-black absolute top-1 right-2 background-transparent font-bold uppercase text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                          className="absolute top-1 right-2 background-transparent outline-none focus:outline-none ease-linear transition-all duration-150"
                           type="button"
                           onClick={() => setShowModal(false)}
                         >
-                          X
+                          <img src={cross} alt="cross-icon" />
                         </button>
                       </div>
                     </div>

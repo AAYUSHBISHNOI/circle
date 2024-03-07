@@ -13,7 +13,7 @@ const Jion = () => {
   return (
     <div className=" max-w-[1920px] mx-auto">
       <div className="max-w-[1140px] mx-auto px-[20px] xl:px-0 py-10 md:py-[60px] pt-[90px] xl:pt-[115px] flex justify-center">
-        <div className="bg-[#4499AD] w-[802px] h-[336px] rounded-[30px] py-4 md:py-[58px] px-5 md:px-[168px] flex justify-center flex-col items-center relative">
+        <div className="bg-[#4499AD] w-[802px] h-[336px] rounded-[30px] py-4 md:py-[58px] px-5 md:px-[168px] flex justify-center flex-col items-center relative" data-aos="zoom-in">
           <span>
             <svg
               className="absolute top-[17%] left-[3%]"
@@ -72,12 +72,14 @@ const Jion = () => {
               onChange={(e) => setEmail(e.target.value)}
               className="bg-transparent text-lightwhite font-inter text-base leading-150 outline-none w-[60%] md:w-[57%]"
             />
-            <button
-              type="submit"
-              className="font-inter font-semibold text-sm md:text-base leading-121 text-white bg-[#4499ad] hover:bg-[#bbbbba] duration-300 ease-in-out py-[12px] px-[18px] md:px-[24px] rounded-[10px]"
-            >
-              Sign Up
-            </button>
+            <div className=" flex justify-end items-end">
+              <button
+                type="submit"
+                className="font-inter font-semibold text-sm md:text-base leading-121 text-white bg-[#4499ad] hover:bg-[#bbbbba] duration-300 ease-in-out py-[12px] px-[18px] md:px-[24px] rounded-[10px]"
+              >
+                Sign Up
+              </button>
+            </div>
           </form>
         </div>
       </div>

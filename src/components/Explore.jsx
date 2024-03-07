@@ -90,18 +90,18 @@ const Explore = () => {
           </g>
         </svg>
       </span>
-      <div className="container px-0 pt-10 md:pt-[60px] lg:pt-[90px] xl:pt-[115px]">
+      <div className=" container px-0 pt-10 md:pt-[60px] lg:pt-[90px] xl:pt-[115px]">
         <div className="md:flex flex-wrap items-center">
-          <div className="w-full lg:w-[60%]">
+          <div className="w-full lg:w-[60%]" data-aos="fade-up">
             <img
               className="xl:!max-w-[957px] !lg:max-w-[750px] h-[270px] md:h-[450px] lg:h-[550px] xl:h-[651px]"
               src={explore}
               alt="expore-img"
             />
           </div>
-          <div className="w-full lg:w-[40%] mt-4  md:mt-6 lg:mt-0 xl:flex xl:justify-end xl:items-end">
-            <div className="text-center xl:-translate-x-[7%]">
-              <p className="font-dancing font-semibold text-6xl  xl:text-8xl text-[#4499AD] leading-121 max-w-[491px] md:max-w-[728px] lg:max-w-[491px]">
+          <div className="w-full lg:w-[40%] mt-4  md:mt-6 lg:mt-0 xl:flex xl:justify-end xl:items-end" data-aos="fade-down">
+            <div className="text-center xl:-translate-x-[10%] flex flex-col justify-center items-center">
+              <p className="font-dancing font-semibold text-6xl xl:text-8xl text-[#4499AD] leading-121 xl:max-w-[491px]">
                 Explore the world with us
               </p>
               <p className="font-dancing font-bold text-5xl lg:text-5xl xl:text-[64px] leading-121 text-[#DBBFA7] lg:mt-2 xl:mt-4">

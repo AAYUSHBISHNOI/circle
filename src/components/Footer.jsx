@@ -13,7 +13,7 @@ const Footer = () => {
   };
   const currentYear = new Date().getFullYear();
   return (
-    <div className="bg-[#1D1C19] max-w-[1920px] mx-auto">  
+    <div className="bg-[#1D1C19] max-w-[1920px] mx-auto">
       <div className="max-w-[1140px] mx-auto px-[20px] xl:px-0 pt-10 md:pt-[60px]">
         <div className="flex flex-wrap justify-between pb-8">
           <div className="lg:w-[30%] xl:w-[28%]">
@@ -224,12 +224,14 @@ const Footer = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 className="bg-transparent text-lightwhite font-inter text-base leading-150 outline-none w-[60%] md:w-[57%]"
               />
-              <button
-                type="submit"
-                className="font-inter font-semibold text-sm md:text-base leading-121 text-white bg-[#4499ad] hover:bg-[#bbbbba] duration-300 ease-in-out py-[12px] px-[18px] md:px-[24px] rounded-[10px]"
-              >
-                Get Started
-              </button>
+              <div className=" flex justify-end items-end">
+                <button
+                  type="submit"
+                  className="font-inter font-semibold text-sm md:text-base leading-121 text-white bg-[#4499ad] hover:bg-[#bbbbba] duration-300 ease-in-out py-[12px] px-[18px] md:px-[24px] rounded-[10px]"
+                >
+                  Get Started
+                </button>
+              </div>
             </form>
           </div>
         </div>

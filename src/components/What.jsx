@@ -19,7 +19,6 @@ const What = () => {
           />
         </svg>
       </span>
-    
       <div className="max-w-[1140px] mx-auto px-[20px] xl:px-0 pt-10 md:pt-[60px] lg:pt-[90px] xl:pt-[144px] relative">
         <span>
           <svg
@@ -40,8 +39,186 @@ const What = () => {
         <h2 className=" font-inter font-semibold text-4xl md:text-5xl leading-121 text-[#4499ad] text-center">
           What our customers say
         </h2>
-        <div className="flex flex-wrap justify-center md:justify-between mt-5 md:mt-10">
-          <div className="w-full max-w-[370px] md:w-[48%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative px-3">
+        <div className="flex flex-wrap gap-5 md:gap-0 justify-center lg:hidden mt-5 md:mt-10">
+            <div className=" md:flex">
+              <div className="w-full max-w-[370px] md:w-[50%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative px-3" data-aos="zoom-in">
+                <span>
+                  <svg
+                    className="absolute top-[5%] left-[37%] lg:left-[34%]"
+                    width="91"
+                    height="55"
+                    viewBox="0 0 91 55"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.90464 26.1298C-9.05595 13.1988 29.9585 7.91344 50.8358 6.88717C74.4632 -8.50691 92.6431 5.42551 90.8821 14.5842C89.381 27.7469 83.5618 2.26895 85.1276 33.0571C86.6934 63.8453 64.2409 55.6351 52.819 47.6815C40.4144 45.8855 12.8652 39.0608 1.90464 26.1298Z"
+                      fill="#FDEDD4"
+                    />
+                  </svg>
+                </span>
+                <div className="flex items-center gap-2 z-10">
+                  <span>
+                    <svg
+                      width="20"
+                      height="19"
+                      viewBox="0 0 20 19"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                        fill="#FBB03B"
+                      />
+                    </svg>
+                  </span>
+                  <p className="font-inter font-medium text-base leading-150 text-black">
+                    4.7/5
+                  </p>
+                </div>
+                <p className="font-inter font-semibold text-xl leading-140 mt-4">
+                  Totally Worth
+                </p>
+                <p className="font-inter font-medium text-base leading-150 text-[#4d4d4d] max-w-[231px] mt-4">
+                  Lorem ipsum dolor sit ame sitamet, consectetursit dolors sit
+                  adipiscing elit, sed do eiu amet smod tempor{" "}
+                </p>
+              </div>
+              <div className="w-full max-w-[370px] md:w-[50%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative mt-4 md:mt-0 px-3 md:ms-5 lg:ms-0" data-aos="zoom-in-up">
+                <span>
+                  <svg
+                    className="absolute top-[5%] left-[37%] lg:left-[34%]"
+                    width="91"
+                    height="55"
+                    viewBox="0 0 91 55"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.90464 26.1298C-9.05595 13.1988 29.9585 7.91344 50.8358 6.88717C74.4632 -8.50691 92.6431 5.42551 90.8821 14.5842C89.381 27.7469 83.5618 2.26895 85.1276 33.0571C86.6934 63.8453 64.2409 55.6351 52.819 47.6815C40.4144 45.8855 12.8652 39.0608 1.90464 26.1298Z"
+                      fill="#FDEDD4"
+                    />
+                  </svg>
+                </span>
+                <div className="flex items-center gap-2 z-10">
+                  <span>
+                    <svg
+                      width="20"
+                      height="19"
+                      viewBox="0 0 20 19"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                        fill="#FBB03B"
+                      />
+                    </svg>
+                  </span>
+                  <p className="font-inter font-medium text-base leading-150 text-black">
+                    4.7/5
+                  </p>
+                </div>
+                <p className="font-inter font-semibold text-xl leading-140 mt-4">
+                  Totally Worth
+                </p>
+                <p className="font-inter font-medium text-base leading-150 text-[#4d4d4d] max-w-[231px] mt-4">
+                  Lorem ipsum dolor sit ame sitamet, consectetursit dolors sit
+                  adipiscing elit, sed do eiu amet smod tempor{" "}
+                </p>
+              </div>
+            </div>
+            <div className=" md:flex">
+              <div className="w-full max-w-[370px] md:w-[50%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative mt-4 md:mt-5 xmd:mt-0 lg:mt-0 px-3" data-aos="zoom-in-down">
+                <span>
+                  <svg
+                    className="absolute top-[5%] left-[37%] lg:left-[34%]"
+                    width="91"
+                    height="55"
+                    viewBox="0 0 91 55"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.90464 26.1298C-9.05595 13.1988 29.9585 7.91344 50.8358 6.88717C74.4632 -8.50691 92.6431 5.42551 90.8821 14.5842C89.381 27.7469 83.5618 2.26895 85.1276 33.0571C86.6934 63.8453 64.2409 55.6351 52.819 47.6815C40.4144 45.8855 12.8652 39.0608 1.90464 26.1298Z"
+                      fill="#FDEDD4"
+                    />
+                  </svg>
+                </span>
+                <div className="flex items-center gap-2 z-10">
+                  <span>
+                    <svg
+                      width="20"
+                      height="19"
+                      viewBox="0 0 20 19"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                        fill="#FBB03B"
+                      />
+                    </svg>
+                  </span>
+                  <p className="font-inter font-medium text-base leading-150 text-black">
+                    4.7/5
+                  </p>
+                </div>
+                <p className="font-inter font-semibold text-xl leading-140 mt-4">
+                  Totally Worth
+                </p>
+                <p className="font-inter font-medium text-base leading-150 text-[#4d4d4d] max-w-[231px] mt-4">
+                  Lorem ipsum dolor sit ame sitamet, consectetursit dolors sit
+                  adipiscing elit, sed do eiu amet smod tempor{" "}
+                </p>
+              </div>
+              <div className="w-full max-w-[370px] md:w-[50%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative mt-4 md:mt-5 lg:mt-0 px-3 md:ms-5 lg:ms-0" data-aos="zoom-out">
+                <span>
+                  <svg
+                    className="absolute top-[5%] left-[37%] lg:left-[34%]"
+                    width="91"
+                    height="55"
+                    viewBox="0 0 91 55"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.90464 26.1298C-9.05595 13.1988 29.9585 7.91344 50.8358 6.88717C74.4632 -8.50691 92.6431 5.42551 90.8821 14.5842C89.381 27.7469 83.5618 2.26895 85.1276 33.0571C86.6934 63.8453 64.2409 55.6351 52.819 47.6815C40.4144 45.8855 12.8652 39.0608 1.90464 26.1298Z"
+                      fill="#FDEDD4"
+                    />
+                  </svg>
+                </span>
+                <div className="flex items-center gap-2 z-10">
+                  <span>
+                    <svg
+                      width="20"
+                      height="19"
+                      viewBox="0 0 20 19"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                        fill="#FBB03B"
+                      />
+                    </svg>
+                  </span>
+                  <p className="font-inter font-medium text-base leading-150 text-black">
+                    4.7/5
+                  </p>
+                </div>
+                <p className="font-inter font-semibold text-xl leading-140 mt-4">
+                  Totally Worth
+                </p>
+                <p className="font-inter font-medium text-base leading-150 text-[#4d4d4d] max-w-[231px] mt-4">
+                  Lorem ipsum dolor sit ame sitamet, consectetursit dolors sit
+                  adipiscing elit, sed do eiu amet smod tempor{" "}
+                </p>
+              </div>
+            </div>
+        </div>
+        <div className="hidden lg:flex justify-between mt-10">
+          <div className="w-[237px] h-[260px] xl:w-[267px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative px-3" data-aos="zoom-in">
             <span>
               <svg
                 className="absolute top-[5%] left-[37%] lg:left-[34%]"
@@ -84,7 +261,7 @@ const What = () => {
               adipiscing elit, sed do eiu amet smod tempor{" "}
             </p>
           </div>
-          <div className="w-full max-w-[370px] md:w-[48%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative mt-4 md:mt-0 px-3">
+          <div className="w-[237px] h-[260px] xl:w-[267px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative px-3" data-aos="zoom-in-up">
             <span>
               <svg
                 className="absolute top-[5%] left-[37%] lg:left-[34%]"
@@ -127,7 +304,7 @@ const What = () => {
               adipiscing elit, sed do eiu amet smod tempor{" "}
             </p>
           </div>
-          <div className="w-full max-w-[370px] md:w-[48%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative mt-4 md:mt-7 lg:mt-0 px-3">
+          <div className="w-[237px] h-[260px] xl:w-[267px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative px-3" data-aos="zoom-in-down">
             <span>
               <svg
                 className="absolute top-[5%] left-[37%] lg:left-[34%]"
@@ -170,7 +347,7 @@ const What = () => {
               adipiscing elit, sed do eiu amet smod tempor{" "}
             </p>
           </div>
-          <div className="w-full max-w-[370px] md:w-[48%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative mt-4 md:mt-7 lg:mt-0 px-3">
+          <div className="w-[237px] h-[260px] xl:w-[267px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative px-3" data-aos="zoom-out">
             <span>
               <svg
                 className="absolute top-[5%] left-[37%] lg:left-[34%]"
