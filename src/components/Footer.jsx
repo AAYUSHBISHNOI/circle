@@ -207,7 +207,7 @@ const Footer = () => {
                 Subscribe Us
               </li>
             </ul>
-            <p className="max-w-[336px] font-inter font-normal text-base leading-150 text-lightwhite ">
+            <p className="max-w-[336px] font-inter font-normal text-base leading-150 text-lightwhite mt-2 md:mt-4">
               Lorem ipsum dolor sit amet consectetur. Diam pellentesque nulla
               viverra.
             </p>

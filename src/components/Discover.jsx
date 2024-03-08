@@ -35,15 +35,15 @@ const Discover = () => {
   }, []);
   return (
     <div className=" max-w-[1920px] mx-auto">
-      <div className="max-w-[1140px] mx-auto px-[20px] xl:px-0 pt-10 md:pt-[60px] lg:pt-[90px] xl:pt-[130px]">
+      <div className="max-w-[1140px] mx-auto px-[20px] xl:px-0 pt-10 md:pt-[60px] lg:pt-[90px] xl:pt-[110px]">
         <div className=" flex justify-center text-center" data-aos="fade-up">
-          <h2 className="font-inter font-semibold text-3xl md:text-5xl leading-121 text-[#4499ad] max-w-[603px]">
+          <h2 className="font-inter font-semibold text-3xl md:text-5xl !leading-121 text-[#4499ad] max-w-[603px]">
             Discover your perfect journey
           </h2>
         </div>
         <div className="flex flex-wrap justify-center md:justify-between mt-5 md:mt-10">
           <div
-            className="w-full max-w-[364px] md:w-[32%] xl:w-[364px] h-[540px] rounded-[20px] bg-white border border-[#c1c1c1] hover:border-[#4499ad] duration-300 ease-in-out px-6 flex flex-col justify-center items-center text-center"
+            className="w-full max-w-[364px] md:w-[32%] xl:w-[364px] h-[500px] md:h-[540px] rounded-[20px] bg-white border border-[#c1c1c1] hover:border-[#4499ad] duration-300 ease-in-out px-6 flex flex-col justify-center items-center text-center"
             data-aos="fade-down"
           >
             <p className="font-inter font-semibold text-[32px] leading-130 text-[#010101]">
@@ -189,7 +189,7 @@ const Discover = () => {
             </div>
           </div>
           <div
-            className="w-full max-w-[364px] md:w-[32%] xl:w-[364px] h-[540px] rounded-[20px] bg-white border border-[#c1c1c1] hover:border-[#4499ad] duration-300 ease-in-out px-6 flex flex-col justify-center items-center text-center mt-5 md:mt-0 relative overflow-hidden"
+            className="w-full max-w-[364px] md:w-[32%] xl:w-[364px] h-[500px] md:h-[540px] rounded-[20px] bg-white border border-[#c1c1c1] hover:border-[#4499ad] duration-300 ease-in-out px-6 flex flex-col justify-center items-center text-center mt-5 md:mt-0 relative overflow-hidden"
             data-aos="fade-right"
           >
             <div>
@@ -368,7 +368,7 @@ const Discover = () => {
             </div>
           </div>
           <div
-            className="w-full max-w-[364px] md:w-[32%] xl:w-[364px] h-[540px] rounded-[20px] bg-white border border-[#c1c1c1] hover:border-[#4499ad] duration-300 ease-in-out px-6 flex flex-col justify-center items-center text-center mt-5 md:mt-0"
+            className="w-full max-w-[364px] md:w-[32%] xl:w-[364px] h-[500px] md:h-[540px] rounded-[20px] bg-white border border-[#c1c1c1] hover:border-[#4499ad] duration-300 ease-in-out px-6 flex flex-col justify-center items-center text-center mt-5 md:mt-0"
             data-aos="fade-left"
           >
             <p className="font-inter font-semibold text-[32px] leading-130 text-[#010101]">

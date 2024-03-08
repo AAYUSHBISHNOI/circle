@@ -65,7 +65,7 @@ const Header = () => {
         <div className="md:flex flex-wrap lg:items-center xl:items-start">
           <div className="w-full lg:w-[60%] xl:w-[60%]" data-aos="fade-up">
             <img
-              className="max-w-[300px] md:max-w-[550px] lg:max-w-[680px] xl:max-w-[949px] h-[270px] md:h-[450px] lg:h-[629px]"
+              className="max-w-[300px] xmd:max-w-[550px] lg:max-w-[680px] xl:max-w-[949px] h-[270px] xmd:h-[450px] lg:h-[500px] xl:h-[629px]"
               src={heroimg}
               alt="expore-img"
             />
@@ -130,7 +130,7 @@ const Header = () => {
                     </svg>
                   </span>
                   <div className="relative" onClick={closeDropdowns}>
-                    <div className="flex items-center gap-1 ms-2">
+                    <div className="flex items-center gap-1 ms-1">
                       <select
                         ref={selectRef}
                         className={`outline-none font-inter font-normal text-base leading-150 text-[#6b666a] appearance-none ${
@@ -143,7 +143,7 @@ const Header = () => {
                         ))}
                       </select>
                       <svg
-                        className="absolute right-0 top-1/2 transform -translate-y-1/2 h-4 w-4 pointer-events-none text-[#6b666a]"
+                        className="absolute right-0 top-1/2 transform h-6 w-6 -translate-y-1/2 pointer-events-none text-[#6b666a]"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         fill="none"

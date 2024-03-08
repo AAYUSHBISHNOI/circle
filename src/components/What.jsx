@@ -19,10 +19,10 @@ const What = () => {
           />
         </svg>
       </span>
-      <div className="max-w-[1140px] mx-auto px-[20px] xl:px-0 pt-10 md:pt-[60px] lg:pt-[90px] xl:pt-[144px] relative">
+      <div className="max-w-[1140px] mx-auto px-[20px] xl:px-0 pt-10 md:pt-[60px] lg:pt-[90px] xl:pt-[120px] relative">
         <span>
           <svg
-            className=" absolute -z-10 top-0 md:top-[-4%] lg:top-0 xl:top-[9%] left-[0]"
+            className=" absolute -z-10 top-0 md:top-[-4%] lg:top-0 xl:top-[3%] left-[0]"
             width="100%"
             height="197"
             viewBox="0 0 1087 197"
@@ -39,7 +39,7 @@ const What = () => {
         <h2 className=" font-inter font-semibold text-4xl md:text-5xl leading-121 text-[#4499ad] text-center">
           What our customers say
         </h2>
-        <div className="flex flex-wrap gap-5 md:gap-0 justify-center lg:hidden mt-5 md:mt-10">
+        <div className="flex flex-wrap xmd:gap-5 md:gap-0 justify-center lg:hidden mt-5 md:mt-10">
             <div className=" md:flex">
               <div className="w-full max-w-[370px] md:w-[50%] lg:w-[234px] xl:w-[267px] h-[231px] lg:h-[255px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative px-3" data-aos="zoom-in">
                 <span>
