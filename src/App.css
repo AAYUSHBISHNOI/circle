@@ -7,6 +7,12 @@
 .footer-icon:hover path {
   fill: white !important;
 }
-.linear-line{
-  background:  linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 57.86%, rgba(255, 255, 255, 0) 100.79%);
-} 
+
+
+/* <button type="button" onClick={() => setShowModal(true)}>
+<img
+  className="lg:w-[90px] w-[40px] h-[40px] md:w-[60px] md:h-[60px] lg:h-[90px] absolute -translate-x-[50%] -translate-y-[50%] top-[52%] left-[52%]"
+  src={button}
+  alt="play-button"
+/>
+</button> */

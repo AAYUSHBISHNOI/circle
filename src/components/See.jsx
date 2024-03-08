@@ -6,11 +6,14 @@ import play from "../assets/image/svg/play.svg";
 import pause from "../assets/image/svg/pause.svg";
 import tajmahal from "../assets/video/taj-mahal.mp4";
 import { useRef } from "react";
+import { useState } from "react";
+import { useEffect } from "react";
 
 const See = () => {
-  const [showModal, setShowModal] = React.useState(false);
+  const [showModal, setShowModal] = useState(false);
   const videoRef = useRef(null);
-  const [isplaying, setisplaying] = React.useState(false);
+  const [isplaying, setisplaying] = useState(false);
+  const [showPlayPause, setShowPlayPause] = useState(false);
 
   const togglePlaying = () => {
     if (videoRef.current.paused) {
@@ -21,6 +24,23 @@ const See = () => {
       setisplaying(false);
     }
   };
+
+  const handleMouseEnter = () => {
+    setShowPlayPause(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShowPlayPause(false);
+  };
+
+  useEffect(() => {
+    if (showModal) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [showModal]);
+
   return (
     <div>
       <div className="px-0 pt-10 md:pt-[60px] lg:pt-[90px] xl:pt-[130px] max-w-[1920px] mx-auto">
@@ -81,9 +101,13 @@ const See = () => {
               {showModal ? (
                 <>
                   <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none">
-                    <div className="relative w-auto my-6 mx-auto max-w-[90%]">
+                    <div className="relative w-auto my-6 mx-auto max-w-[90%] 2xl:max-w-[50%]">
                       <div className="bg-white p-4 rounded-lg shadow-lg">
-                        <div>
+                        <div
+                          onMouseEnter={handleMouseEnter}
+                          onMouseLeave={handleMouseLeave}
+                          className="relative"
+                        >
                           <video
                             ref={videoRef}
                             loop
@@ -94,16 +118,18 @@ const See = () => {
                             onPause={() => setisplaying(false)}
                             onPlay={() => setisplaying(true)}
                           ></video>
-                          <button
-                            className=" absolute -translate-x-[50%] -translate-y-[50%] top-[50%] left-[50%]"
-                            onClick={togglePlaying}
-                          >
-                            {isplaying ? (
-                              <img src={pause} alt="Pause" />
-                            ) : (
-                              <img src={play} alt="Play" />
-                            )}
-                          </button>
+                          {showPlayPause && (
+                            <button
+                              className="absolute -translate-x-[50%] -translate-y-[50%] top-[50%] left-[50%]"
+                              onClick={togglePlaying}
+                            >
+                              {isplaying ? (
+                                <img src={pause} alt="Pause" />
+                              ) : (
+                                <img src={play} alt="Play" />
+                              )}
+                            </button>
+                          )}
                         </div>
                         <button
                           className="absolute top-1 right-2 background-transparent outline-none focus:outline-none ease-linear transition-all duration-150"
@@ -118,12 +144,6 @@ const See = () => {
                   <div className="opacity-50 fixed inset-0 z-40 bg-black"></div>
                 </>
               ) : null}
-
-              {/* <img
-                className="lg:w-[90px] w-[40px] h-[40px] md:w-[60px] md:h-[60px] lg:h-[90px] absolute -translate-x-[50%] -translate-y-[50%] top-[52%] left-[52%]"
-                src={button}
-                alt="play-button"
-              /> */}
             </div>
           </div>
         </div>

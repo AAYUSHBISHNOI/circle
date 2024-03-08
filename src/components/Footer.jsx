@@ -29,12 +29,13 @@ const Footer = () => {
             </p>
             <div className="mt-2 md:mt-4 flex gap-4">
               <a
+                className="footer-icon group"
                 href="https://twitter.com/?lang=en"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg
-                  className=" footer-icon duration-300 ease-in-out"
+                  className="fill-current text-gray-600 group-hover:text-white duration-300 ease-in-out"
                   width="32"
                   height="32"
                   viewBox="0 0 32 32"
@@ -235,7 +236,7 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <div className="h-[2px] w-full linear-line"></div>
+        <div className="w-full h-[2px] bg-gradient-to-r from-white/0 to-white/1 via-white/30 relative opacity-50"></div>
         <div className=" text-center py-4">
           <p className="font-inter text-base font-normal text-lightwhite leading-150">
             Copyright © {currentYear} Circle. All Rights Reserved.
