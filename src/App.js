@@ -2,16 +2,16 @@ import "./App.css";
 import Discover from "./components/Discover";
 import Explore from "./components/Explore";
 import Footer from "./components/Footer";
-import Jion from "./components/Jion";
 import See from "./components/See";
-import Top from "./components/Top";
-import What from "./components/What";
-import Header from "./components/Header";
 import Nav from "./components/Nav";
-import BackToTop from "./components/BackToTop";
+import BackToTop from "./components/Comman/BackToTop";
 import { useEffect } from "react";
 import "aos/dist/aos.css"
 import Aos from "aos"
+import Join from "./components/Join";
+import Hero from "./components/Hero";
+import Topdestination from "./components/Topdestination";
+import Ourcustomers from "./components/Ourcustomer";
 
 function App() {
   useEffect(() => {
@@ -21,13 +21,13 @@ function App() {
   return (
     <div className=" overflow-hidden">
       <Nav />
-      <Header />
-      <Top />
+      <Hero/>
+      <Topdestination/>
       <See />
       <Discover />
-      <What />
+      <Ourcustomers/>
       <Explore />
-      <Jion />
+      <Join/>
       <Footer />
       <BackToTop/>
     </div>

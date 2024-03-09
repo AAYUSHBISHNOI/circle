@@ -1,21 +1,28 @@
 import React, { useState, useRef } from "react";
-import heroimg from "../assets/image/webp/header-img.webp";
+import heroimg from "../assets/image/webp/hero-girl.webp";
 import elpise from "../assets/image/svg/main-elipse.svg";
 import aeroplane from "../assets/image/svg/header-elpise.svg";
 import { ChevronDownIcon, SearchIcon } from "@heroicons/react/solid";
+import Props from "./Props";
 
 const Header = () => {
+  // State for managing dropdown
   const options = ["Places", "Agra", "Jaipur", "Goa"];
+  // State for managing the search query input
   const [searchQuery, setSearchQuery] = useState("");
+  // State to manage the visibility of the dropdown menu
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  // Reference for managing focus on the dropdown
   const selectRef = useRef(null);
 
+  // Function to handle search submissions
   const handleSearch = (e) => {
-    e.preventDefault();
-    console.log("Search clicked");
-    setSearchQuery("");
+    e.preventDefault(); // Prevents the default form submit action
+    console.log("Search clicked"); // Log action for debugging
+    setSearchQuery(""); // Reset search query state
   };
 
+  // Function to toggle the dropdown menu visibility
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
     if (!dropdownOpen) {
@@ -23,6 +30,7 @@ const Header = () => {
     }
   };
 
+  // Function to close the dropdown menu
   const closeDropdowns = () => {
     setDropdownOpen(false);
   };
@@ -31,7 +39,7 @@ const Header = () => {
     <div className=" max-w-[1920px] mx-auto relative">
       <span>
         <svg
-          className=" absolute top-[-15%] left-[-2%] w-[170px] h-[200px] md:left-0 md:top-[-9%] lg:top-[-15%] lg:left-[-6%] lg:w-[234px] lg:h-[254px] xl:left-[3%] 2xl:left-[15%]" 
+          className=" absolute top-[-15%] left-[-2%] w-[170px] h-[200px] md:left-0 md:top-[-9%] lg:top-[-15%] lg:left-[-6%] lg:w-[234px] lg:h-[254px] xl:left-[3%] 2xl:left-[15%]"
           viewBox="0 0 238 254"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +51,11 @@ const Header = () => {
           />
         </svg>
       </span>
-    <img className=" absolute top-[-12%] left-0 md:left-[34%] md:top-[-8%] lg:left-[23%] lg:top-[-12%] xl:left-[30%]" src={aeroplane} alt="aeroplane-elipse" />
+      <img
+        className=" absolute top-[-12%] left-0 md:left-[34%] md:top-[-8%] lg:left-[23%] lg:top-[-12%] xl:left-[30%]"
+        src={aeroplane}
+        alt="aeroplane-elipse"
+      />
       <span>
         <svg
           className=" absolute right-0 bottom-[-2%] -z-10 "
@@ -60,7 +72,11 @@ const Header = () => {
           />
         </svg>
       </span>
-      <img  className=" absolute hidden xl:block -z-10 h-[4375px] top-[85%] left-[-1%]" src={elpise} alt="main-elipse" />
+      <img
+        className=" absolute hidden xl:block -z-10 h-[4375px] top-[85%] left-[-1%]"
+        src={elpise}
+        alt="main-elipse"
+      />
       <div className="max-w-[1140px] mx- auto px-0 pt-10 md:pt-[60px] lg:pt-[63px] relative">
         <div className="md:flex flex-wrap lg:items-center xl:items-start">
           <div className="w-full lg:w-[60%] xl:w-[60%]" data-aos="fade-up">
@@ -70,21 +86,30 @@ const Header = () => {
               alt="expore-img"
             />
           </div>
-          <div className="w-full lg:w-[40%] xl:w-[40%] mt-4 md:mt-6 lg:mt-0 px-[20px] xl:px-0 flex justify-center flex-col items-center" data-aos="fade-down">
+          <div
+            className="w-full lg:w-[40%] xl:w-[40%] mt-4 md:mt-6 lg:mt-0 px-[20px] xl:px-0 flex justify-center flex-col items-center"
+            data-aos="fade-down"
+          >
             <div className="text-center xl:translate-x-[32.5%] 2xl:translate-x-[90%]">
-              <p className="font-dancing font-bold text-6xl md:text-7xl xl:text-9xl text-[#4499AD] !leading-110 max-w-[491px] md:max-w-[728px] lg:max-w-[491px]">
-                Time to <span className="xl:ml-12">Explore</span>
-              </p>
-              <p className="font-dancing font-bold text-4xl md:text-5xl xl:text-[64px] leading-121 text-[#DBBFA7] lg:mt-2 xl:mt-4 lg:max-w-[408px] xl:ml-10">
-                Find yourDreams
-              </p>
+              <Props
+                heading="Time to"
+                title="Explore"
+                mainheading=" Time to Explore"
+                para="Find yourDreams"
+                custompara="font-dancing font-bold text-4xl md:text-5xl xl:text-[64px] leading-121 text-[#DBBFA7] lg:mt-2 xl:mt-4 lg:max-w-[408px] xl:ml-10"
+                custommainheading="font-dancing font-bold lg:hidden text-6xl md:text-7xl xl:text-9xl text-[#4499AD] !leading-110 max-w-[491px] md:max-w-[728px] lg:max-w-[491px]"
+                customtitle="font-dancing xl:ml-12 font-bold text-6xl hidden lg:block md:text-7xl xl:text-9xl text-[#4499AD] !leading-110 max-w-[491px] md:max-w-[728px] lg:max-w-[491px]"
+                customheading="font-dancing font-bold text-6xl hidden lg:block md:text-7xl xl:text-9xl text-[#4499AD] !leading-110 max-w-[491px] md:max-w-[728px] lg:max-w-[491px]"
+              /> 
               <p className="font-inter font-medium text-base leading-150 text-[#4499AD] mt-3 lg:mt-4 max-w-[434px] md:max-w-[710px] lg:max-w-[434px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam
               </p>
+              {/* Search form */}
               <form onSubmit={handleSearch} className=" bg-white">
                 <div className="flex items-center justify-between border border-[#b5b3b4] rounded-xl ps-4 py-1 pe-1 w-[95%] mt-8">
+                  {/* Reset search icon */}
                   <span
                     className="cursor-pointer"
                     onClick={() => {
@@ -113,6 +138,7 @@ const Header = () => {
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                   />
+                  {/* SVG path for reset icon */}
                   <span>
                     <svg
                       width="2"
@@ -131,6 +157,7 @@ const Header = () => {
                   </span>
                   <div className="relative" onClick={closeDropdowns}>
                     <div className="flex items-center gap-1 ms-1">
+                      {/* Dropdown select input */}
                       <select
                         ref={selectRef}
                         className={`outline-none font-inter font-normal text-base leading-150 text-[#6b666a] appearance-none ${
@@ -155,8 +182,10 @@ const Header = () => {
                         <path d="M18 9L12 15L6 9" />
                       </svg>
                     </div>
+                    {/* Dropdown menu */}
                     {dropdownOpen && (
                       <div className="absolute z-10 mt-1 w-full bg-white rounded-md shadow-lg border border-gray-200">
+                        {/* Options rendered from predefined list */}
                         {options.map((option, index) => (
                           <div
                             key={index}

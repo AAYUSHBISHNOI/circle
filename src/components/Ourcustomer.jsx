@@ -1,12 +1,12 @@
 import React from "react";
 import {
-  Ourcustomerbgelipse,
+  Ourcustomerbgelipse,  
   Ourcustomersaeroplane,
   Ourcustomersplane,
   Ourcustomerstar,
 } from "./Icon";
 
-const What = () => {
+const Ourcustomers = () => {
   return (
     <div className=" max-w-[1920px] mx-auto relative">
       <Ourcustomersaeroplane />
@@ -15,7 +15,7 @@ const What = () => {
         <h2 className=" font-inter font-semibold text-4xl md:text-5xl leading-121 text-[#4499ad] text-center">
           What our customers say
         </h2>
-        {/* Customer testimonial cards for mobile */}
+         {/* Customer cards for mobile view */}
         <div className="flex flex-wrap xmd:gap-5 md:gap-0 justify-center lg:hidden mt-5 md:mt-10">
           <div className=" md:flex">
             <div
@@ -98,7 +98,7 @@ const What = () => {
             </div>
           </div>
         </div>
-           {/* Customer testimonial cards for larger screens */}
+        {/* Customer cards for desktop view */}
         <div className="hidden lg:flex justify-between mt-10">
           <div
             className="w-[237px] h-[260px] xl:w-[267px] xl:h-[231px] rounded-[12px] border border-transparent hover:border-[#bbbbba] duration-300 ease-in-out bg-white shadow-what-card text-center flex flex-col items-center justify-center relative px-3"
@@ -182,4 +182,4 @@ const What = () => {
   );
 };
 
-export default What;
+export default Ourcustomers;
