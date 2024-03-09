@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Joinaeroplane, Joinship } from "./Icon";
+import { Joinaeroplane, Joinship } from "./common/Icons";
 
 const Join = () => {
   const [email, setEmail] = useState(""); // State for storing the email input

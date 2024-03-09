@@ -3,7 +3,13 @@ import heroimg from "../assets/image/webp/hero-girl.webp";
 import elpise from "../assets/image/svg/main-elipse.svg";
 import aeroplane from "../assets/image/svg/header-elpise.svg";
 import { ChevronDownIcon, SearchIcon } from "@heroicons/react/solid";
-import Props from "./Props";
+import Props from "./common/MainHeading";
+import {
+  Heroinputarrow,
+  Heroline,
+  Herolineelipse,
+  Heropinkelipse,
+} from "./common/Icons";
 
 const Header = () => {
   // State for managing dropdown
@@ -37,41 +43,13 @@ const Header = () => {
 
   return (
     <div className=" max-w-[1920px] mx-auto relative">
-      <span>
-        <svg
-          className=" absolute top-[-15%] left-[-2%] w-[170px] h-[200px] md:left-0 md:top-[-9%] lg:top-[-15%] lg:left-[-6%] lg:w-[234px] lg:h-[254px] xl:left-[3%] 2xl:left-[15%]"
-          viewBox="0 0 238 254"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M220.5 -52C253.333 30.3333 255.4 206.5 1 252.5"
-            stroke="#F4EAE1"
-            stroke-width="3"
-          />
-        </svg>
-      </span>
+      <Heropinkelipse />
       <img
         className=" absolute top-[-12%] left-0 md:left-[34%] md:top-[-8%] lg:left-[23%] lg:top-[-12%] xl:left-[30%]"
         src={aeroplane}
         alt="aeroplane-elipse"
       />
-      <span>
-        <svg
-          className=" absolute right-0 bottom-[-2%] -z-10 "
-          width="709"
-          height="157"
-          viewBox="0 0 709 157"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1 26.9741C39.0628 -0.0309337 126.94 -29.2363 173.945 69.982C232.702 194.005 352.434 167.5 576.376 69.982C755.53 -8.03243 828.773 102.155 843 167"
-            stroke="#CCD5D4"
-            stroke-width="2"
-          />
-        </svg>
-      </span>
+      <Herolineelipse />
       <img
         className=" absolute hidden xl:block -z-10 h-[4375px] top-[85%] left-[-1%]"
         src={elpise}
@@ -100,7 +78,7 @@ const Header = () => {
                 custommainheading="font-dancing font-bold lg:hidden text-6xl md:text-7xl xl:text-9xl text-[#4499AD] !leading-110 max-w-[491px] md:max-w-[728px] lg:max-w-[491px]"
                 customtitle="font-dancing xl:ml-12 font-bold text-6xl hidden lg:block md:text-7xl xl:text-9xl text-[#4499AD] !leading-110 max-w-[491px] md:max-w-[728px] lg:max-w-[491px]"
                 customheading="font-dancing font-bold text-6xl hidden lg:block md:text-7xl xl:text-9xl text-[#4499AD] !leading-110 max-w-[491px] md:max-w-[728px] lg:max-w-[491px]"
-              /> 
+              />
               <p className="font-inter font-medium text-base leading-150 text-[#4499AD] mt-3 lg:mt-4 max-w-[434px] md:max-w-[710px] lg:max-w-[434px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -139,22 +117,7 @@ const Header = () => {
                     onChange={(e) => setSearchQuery(e.target.value)}
                   />
                   {/* SVG path for reset icon */}
-                  <span>
-                    <svg
-                      width="2"
-                      height="26"
-                      viewBox="0 0 2 26"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        opacity="0.3"
-                        d="M1 1L0.999999 25"
-                        stroke="#090006"
-                        stroke-linecap="round"
-                      />
-                    </svg>
-                  </span>
+                  <Heroline />
                   <div className="relative" onClick={closeDropdowns}>
                     <div className="flex items-center gap-1 ms-1">
                       {/* Dropdown select input */}
@@ -169,18 +132,7 @@ const Header = () => {
                           <option key={index}>{option}</option>
                         ))}
                       </select>
-                      <svg
-                        className="absolute right-0 top-1/2 transform h-6 w-6 -translate-y-1/2 pointer-events-none text-[#6b666a]"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="#4499AD"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M18 9L12 15L6 9" />
-                      </svg>
+                      <Heroinputarrow />
                     </div>
                     {/* Dropdown menu */}
                     {dropdownOpen && (

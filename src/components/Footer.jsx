@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import footer_logo from "../assets/image/svg/footer-logo.svg";
-import { Facebook, Instagram, Linkedin, Twitter } from "./Icon";
+import { Facebook, Instagram, Linkedin, Twitter } from "./common/Icons";
 
 const Footer = () => {
   // State hook for managing email input in the newsletter subscription form.

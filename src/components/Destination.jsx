@@ -5,9 +5,9 @@ import wang from "../assets/image/webp/wang-river.webp";
 import nepal from "../assets/image/webp/nepal-tempal.webp";
 import singapore from "../assets/image/webp/singapore-ferris-wheel.webp";
 import tajmahal from "../assets/image/webp/tajmahal-img.webp";
-import { Explorearrow, Topodestinationelipse } from "./Icon";
+import { Explorearrow, Topodestinationelipse } from "./common/Icons";
 
-const Topdestination = () => {
+const Destination = () => {
   return (
     <div className=" max-w-[1920px] mx-auto relative">
      <Topodestinationelipse/>
@@ -70,4 +70,4 @@ const Topdestination = () => {
   );
 };
 
-export default Topdestination;
+export default Destination;

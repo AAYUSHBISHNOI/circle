@@ -6,7 +6,7 @@ import {
   Discovercross,
   Discoverpopulartag,
   Discovertick,
-} from "./Icon";
+} from "./common/Icons";
 
 const Discover = () => {
   // State to keep track of counters for different plans

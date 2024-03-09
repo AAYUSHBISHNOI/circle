@@ -8,10 +8,10 @@ import tajmahal from "../assets/video/taj-mahal.mp4";
 import { useRef } from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-import { Seehowship } from "./Icon";
-import Props from "./Props";
+import { Seehowship } from "./common/Icons";
+import Props from "./common/MainHeading";
 
-const See = () => {
+const SeeHow = () => {
   const [showModal, setShowModal] = useState(false); // state variable to control modal visibility
   const videoRef = useRef(null); // reference to the video element
   const [isplaying, setisplaying] = useState(false); // state variable to track if video is playing
@@ -146,4 +146,4 @@ const See = () => {
   );
 };
 
-export default See;
+export default SeeHow;
